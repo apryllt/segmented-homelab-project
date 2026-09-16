@@ -14,7 +14,7 @@ For the basic setup of this lab/server environment I aimed to have the following
 - configure firewall rules to restrict access between networks
   
 ## Network Diagram
-
+pending...
 
 ## Tools used
 - Ventoy
@@ -30,7 +30,7 @@ The management network is reserved for administrative access, while the internal
 ## Testing results
 Source | Destination | Result
 :---: | :---: | :---: 
-Management | Internet | 
+Management | Internet | Allowed
 Management | DMZ | Allowed
 Management | Internal | Allowed
 DMZ | Internet | Allowed
@@ -39,7 +39,7 @@ DMZ | Management | Blocked
 Internal | Internet | Allowed
 Internal | DMZ | Allowed
 Internal | Management | Blocked
-Internet/WAN | Internal |
-Internet/WAN | DMZ |
-Internet/WAN | Management |
-Internet/WAN | Firewall admin interface |
+
+pfSense’s default WAN policy blocks unsolicited inbound connections, verified through WAN rules, NAT configuration, and firewall logs
+
+
